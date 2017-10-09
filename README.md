@@ -42,13 +42,14 @@ To check the responsiveness in mobile devices use either *device toolbar* in Chr
 
 ### Mobile
 
-![Navigation menu](/screenshots/mobile_0.jpg?raw=true "Navigation menu" |width=300px)
+<img src="/screenshots/mobile_0.jpg" width="250px">
 
 
-![Navigation open](/screenshots/mobile_1.?raw=true "Navigation open" |width=300px)
+
+<img src="/screenshots/mobile_1.jpg" width="250px">
 
 
-![Full width Product description](/screenshots/mobile_2.jpg?raw=true "Full width Product description" |width=300px)
+<img src="/screenshots/mobile_2.jpg" width="250px">
 
 
 ## Author
