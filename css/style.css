@@ -56,11 +56,11 @@ main {
 .container {
   display: flex;
   flex-wrap: wrap;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;     
+  display: table-cell;
 }
 
 /*
@@ -73,6 +73,7 @@ main {
 }
 
 .logo a{
+  color: transparent;
   margin-left: auto;
   margin-right: auto;
 }
@@ -126,11 +127,20 @@ main {
   background-color: #D2D2D2;
 }
 
-.home_nav {
+.nav_start{
+  padding-left: 0;
+}
+
+.nav_start a{
+  padding-left: 10px;
+}
+
+
+.nav_end {
   background-color: white;
 }
 
-.home_nav a{
+.nav_end a{
   background-color: #212E63;
 }
 
@@ -383,7 +393,7 @@ Responsive media queries
     padding: 0;
   }
 
-  .home_nav {
+  .nav_end {
     background-color: #212E63;
   }
 
