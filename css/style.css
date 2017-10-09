@@ -1,0 +1,396 @@
+/*Initial design setup for different tag elements in the entire page*/
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+p {
+  color: #4E4E4E;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+dd {
+  margin-left: 0;
+}
+
+header {
+  width: 100%;
+  margin:0;
+}
+
+main {
+  display: block; /*IE don't support main tag, add block property*/
+  width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*
+---Header---
+*/
+
+.logo {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.logo a{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Hide hamburger menu icon by default, since navigation menu is not hidden*/
+.menu_icon {
+  display: none;
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #212121;
+  display: block;
+}
+
+.nav_menu {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  width: 100%;
+  margin: 0;
+  font-size: 12px;
+}
+
+.nav_item {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  padding: 0 5px;
+  margin: 0;
+  text-transform: uppercase;
+  background-color: #212121;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 26px;
+  padding: 5px;
+  color: #D2D2D2;
+  width: 100%;
+}
+
+/*Invert background color and font color on hover*/
+.nav a:hover {
+  color: #212121;
+  font-weight: 700 !important;
+  background-color: #D2D2D2;
+}
+
+.home_nav {
+  background-color: white;
+}
+
+.home_nav a{
+  background-color: #212E63;
+}
+
+/*
+Main Page
+*/
+
+/*
+page navigation
+*/
+
+.page_menu {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.page_tabs {
+  display: inline-block;
+}
+
+.page_menu a {
+  color: grey;
+}
+
+.page_menu span:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.page_menu a::after {
+  content: ' > ';
+}
+
+.current_page{
+  font-weight: 700;
+}
+
+/*
+Product Display
+*/
+
+/*Product image display size 60% of the width of main by default*/
+.product_display {
+  width: 60%;
+
+}
+
+.main_display {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main_display img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main_display div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  width: 24%;
+}
+
+.thumbnail img {
+  width: 75px;
+  height: 90px;
+  margin: 0;
+}
+
+.thumbnail div {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 79px;
+  height: 94px;
+}
+
+.thumbnail_active {
+  border: 1px solid #212121 !important;
+}
+
+/*Product description will be 40% width of main by default*/
+.product_description {
+  width: 40%;
+}
+
+.qty {
+  height: 30px;
+  background-color: inherit;
+  border: 1px solid #A2A2A2;
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,.39);
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+}
+
+
+.product_description ul {
+  list-style: initial;
+  padding: 20px;
+  color: #4E4E4E;
+  margin-top: 0.2em;
+  padding-top: 0;
+}
+
+.product_description p {
+  margin: 0.5em 0;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cart {
+  display: block;
+  margin: 10px 0;
+}
+
+/*Successfull added to cart message hidden by default, will be displayed for 3 sec after click on add to cart button (refer app.js file)*/
+.cart_message {
+  color: #3BDD1A;
+  display: none;
+  font-weight: 700;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #888888;
+}
+
+.description_border {
+  border: 0;
+  height: 2px;
+  background: #212121;
+}
+
+.expand_tab {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Times New Roman", sans-serif;
+  text-transform: uppercase;
+}
+
+/*
+Footer
+*/
+
+footer {
+  font-size: 12px;
+  background-color: #C2C2C2;
+  box-shadow: 0 -5px 5px -5px #000;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+footer p {
+  padding: 5px;
+}
+
+footer span {
+  color: red;
+}
+
+/*
+Responsive media queries
+*/
+
+/*Reduce main display image size with respect to screen width to avoid overflow*/
+@media screen and (max-width: 520px) {
+  /*Reduce logo size for mobile devices*/
+  .logo img {
+    width: 150px;
+  }
+
+  .main_display {
+    width: 100%;
+  }
+
+  .main_display img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+/*Make product_display and product_description width 100% from 60% and 40%*/
+@media screen and (max-width: 840px) {
+  .product_display {
+    width: 100%;
+    padding: 5px !important;
+  }
+
+  .product_description {
+    width: 100%;
+    padding: 5px !important;
+  }
+}
+
+/*Avoid navigation menu overflow by using menu icon to toggle*/
+@media screen and (max-width: 1048px) {
+  main {
+    width: 100%;
+  }
+
+  /*To seperate header from main content*/
+  .logo {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  .nav {
+    z-index: 10;
+    width: 300px;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    transition: transform 0.3s ease;
+    background-color: #212121;
+    left:0;
+  }
+
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    display: block;
+  }
+
+  .nav_item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+  }
+
+  .home_nav {
+    background-color: #212E63;
+  }
+
+  .nav a{
+    width: 280px;
+    display: block;
+    padding: 5px 10px;
+  }
+
+  .menu_icon {
+    display: inline-block;
+    position: absolute;
+    padding: 1em;
+  }
+
+  .menu_icon svg {
+    width: 32px;
+    fill: #212121;
+  }
+
+}

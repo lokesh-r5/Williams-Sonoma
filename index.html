@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Williams Sonoma product page for Williams Sonoma coding test">
+    <meta name="author" content="Lokesh Reddyvari">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0, user-scalable=yes">
+    <title>Williams Sonoma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
+  </head>
+  <body>
+    <!-- HTML5 header tag to display logo and navigation menu top of the page-->
+    <header class="container">
+      <div class="logo container">
+        <!-- Hamburger icon to open navigation menu on smaller devices -->
+        <a id="menu" class="menu_icon">
+          <!-- SVG icon for better resolution and smaller image size -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
+
+        <a href="#">
+          <img src="assets/logo.png" alt="Williams Sonoma">
+        </a>
+      </div>
+
+      <!-- HTML5 nav tag to definenavigation -->
+      <nav id="menu_drawer" class="nav">
+        <ul class="nav_menu">
+          <li class="nav_item"><a href="#">Cookware</a></li>
+          <li class="nav_item"><a href="#">Cooks' tools</a></li>
+          <li class="nav_item"><a href="#">Cutlery</a></li>
+          <li class="nav_item"><a href="#">Electrics</a></li>
+          <li class="nav_item"><a href="#">Bakeware</a></li>
+          <li class="nav_item"><a href="#">Food</a></li>
+          <li class="nav_item"><a href="#">Table top & Bar</a></li>
+          <li class="nav_item"><a href="#">Home keeping</a></li>
+          <li class="nav_item"><a href="#">Outdoor</a></li>
+          <li class="nav_item"><a href="#">Sale</a></li>
+          <li class="nav_item home_nav"><a class="aa" href="#">Williams-Sonoma Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HTML5 main tag to define main content of the page -->
+    <main>
+      <div class="page_menu">
+        <ul>
+          <li class="page_tabs">
+            <a class="page_link" href="#" title="Home"><span>Home</span></a>
+          </li>
+
+          <li class="page_tabs">
+            <a class="page_link" href="#" title="Home"><span>Homekeeping</span></a>
+          </li>
+
+          <li class="page_tabs">
+            <a class="page_link" href="#" title="Home"><span>Aprons</span></a>
+          </li>
+
+          <li class="page_tabs">
+            <a class="page_link" href="#" title="Home"><span>Adult Aprons</span></a>
+          </li>
+
+          <li class="page_tabs current_page">
+            <span class="page">Williams-Sonoma Classic Apron, French Blue</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- HTML5 section tag to seperate product display and description from other elements -->
+      <section class="product_view container">
+        <!-- Product display that covers 60% of the device on laptops and full width on smaller(mobile, tablet) devices -->
+        <div class="product_display">
+          <div class="container">
+            <div class="main_display">
+              <img id="main-image" src="assets/product-large/a.jpg" alt="Product Image">
+            </div>
+          </div>
+
+          <!-- Thumbnails to select product images -->
+          <div class="thumbnails_display">
+            <ul class="container">
+              <li class="thumbnail">
+                <div id="a">
+                  <img src="assets/product-small/a.jpg" alt="Apron a">
+                </div>
+              </li>
+
+              <li class="thumbnail">
+                <div id="b">
+                  <img src="assets/product-small/b.jpg" alt="Apron b">
+                </div>
+              </li>
+
+              <li class="thumbnail">
+                <div id="c">
+                  <img src="assets/product-small/c.jpg" alt="Apron c">
+                </div>
+              </li>
+
+              <li class="thumbnail">
+                <div id="d">
+                  <img src="assets/product-small/d.jpg" alt="Apron d">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Product description that covers 40% of the device on laptops and full width on smaller(mobile, tablet) devices -->
+        <div class="product_description">
+          <h1>William-Sonoma Classic Apron, French Blue</h1>
+          <div class="summary">
+            <p>A generously sized apron is a necessity in any kitchen, and ours will brighten yours with lively color. Sewn of thick cotton, it can be personalized or monogrammed with up to nine characters, all the same height, embroidered in your choice of color. An apron of this quality makes a welcome gift for any cook.</p>
+            <ul>
+              <li>Durable 100% cotton construction.</li>
+              <li>Adjustable neckband ensures a good fit.</li>
+              <li>Roomy front pockets hold small tools.</li>
+              <li>Machine-wash.</li>
+            </ul>
+          </div>
+
+          <div class="price_cart">
+            <p class="price">&#36; 19.95</p>
+            <input name="quantity" class="qty" type="number" min="0" max="10" value="1">
+            <img class="cart" src="assets/product-description/button-add-to-cart.png" alt="Add to cart">
+            <p class="cart_message">Added to Cart</p>
+          </div>
+
+          <!-- Expand-Collapse tabs to show different features of the product -->
+          <hr class="description_border">
+          <dl>
+            <dt class="expand_tab">
+              <img src="assets/product-description/arrow-collapsed.png" alt="Added to cart">
+              Summary
+            </dt>
+            <dd>
+              <div>
+                <p>This section is expanded. This section can be collapsed by clicking on the "Expanded" test. This section is expanded. This section can be collapsed by clicking on the "Expanded" test.</p>
+              </div>
+            </dd>
+            <hr>
+
+            <dt class="expand_tab">
+              <img src="assets/product-description/arrow-collapsed.png" alt="">
+              Dimensions & More Info
+            </dt>
+            <dd>
+              <div>
+                <p>This section is expanded. This section can be collapsed by clicking on the "Expanded" test. This section is expanded. This section can be collapsed by clicking on the "Expanded" test.</p>
+              </div>
+            </dd>
+            <hr>
+
+            <dt class="expand_tab">
+              <img src="assets/product-description/arrow-collapsed.png" alt="">
+              Shipping
+            </dt>
+            <dd>
+              <div>
+                <p>This section is expanded. This section can be collapsed by clicking on the "Expanded" test. This section is expanded. This section can be collapsed by clicking on the "Expanded" test.</p>
+              </div>
+            </dd>
+          </dl>
+          <hr class="description_border">
+        </div>
+      </section>
+    </main>
+
+    <!-- HTML5 footer tag to define footer for the page -->
+    <footer>
+      <p>© 2017 Williams-Sonoma Inc., All Rights Reserved | Terms and Conditions <span>(Updated March 2016)</span> | Privacy Policy | Legal Statement</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
